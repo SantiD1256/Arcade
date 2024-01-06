@@ -17,11 +17,11 @@ shift = 0
 x_start, y_start = 20, 10
 
 
-img_file_back = 'cave.png'
-img_file_hero = 'm1.png'
-img_file_enemy = 'enemy.png'
-img_file_bomb = 'bomb.png'
-img_file_princess = 'princess.png'
+img_file_back = 'Pradera.png'
+img_file_hero = 'heroe.png'
+img_file_enemy = 'Mounstro.png'
+img_file_bomb = 'bomba.png'
+img_file_princess = 'princesa.png'
 FPS = 60
 
 
@@ -118,7 +118,7 @@ class Hero(pygame.sprite.Sprite):
 
 
 class Wall(pygame.sprite.Sprite):
-   def _init_(self, x=20, y=0, width=120, height=120, color=C_GREEN):
+   def _init_(self, x=20, y=0, width=120, height=120, color=(52, 133, 140)):
        pygame.sprite.Sprite._init_(self)
        # imagen – un nuevo rectángulo del tamaño correcto:
        self.image = pygame.Surface([width, height])
